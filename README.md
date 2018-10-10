@@ -9,4 +9,8 @@ In Q#, we can even create a function for doing something two times and use funct
 
 The output shows that the difference between even and odd number of X operations is as expected. If the created method does a duplicate X operation, the value is always the same.
 
+## RandomGenerator, using super position ##
+
+The RandomGenerator project demonstrates a random generator. A number of booleans is created. Based on this number of booleans, we can create an integer. Each boolean can be considerd as a bit. With a combination of bits, we can describe and calculate and integer. Similar to [this](https://en.wikipedia.org/wiki/Binary_number#Leibniz_and_the_I_Ching). This is really old mathematics and classical logic. We also need a way to randomize. Therefore, each boolean (to be considered as a bit) needs to have a random value. We do this by putting a qbit in a [superposition state](https://en.wikipedia.org/wiki/Quantum_superposition) using [Hadamard gate operation](https://en.wikipedia.org/wiki/Hadamard_transform#Hadamard_gate_operations); check the code and look for the H call. When measuring the qbit, we cannot predict the value. It is random. In traditional computing, random generators try to be as random as possible. Quantum computers use fundamental (laws of) physics to generate random numbers. Nature has random behavior [by itself](https://www.nist.gov/news-events/news/2018/04/nists-new-quantum-method-generates-really-random-numbers). So this is a real random generator. 
+
 
