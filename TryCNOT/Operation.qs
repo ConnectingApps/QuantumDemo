@@ -2,6 +2,7 @@
 {
     open Microsoft.Quantum.Primitive;
     open Microsoft.Quantum.Canon;
+	open Microsoft.Quantum.Extensions.Diagnostics;
 
     operation TryTheCNOT (firstValue : Result, secondValue : Result, doHadamardOnFirst : Bool, doCNOT : Bool) : (Result,Result)
     {
@@ -13,6 +14,9 @@
 			{
 				SetValue(firstValue,register[0]);
 				SetValue(secondValue,register[1]);
+				DumpRegister("q0initial.txt",register[0..0]);
+				DumpRegister("q1initial.txt",register[1..1]);
+
 				if (doHadamardOnFirst)
 				{
 					H(register[0]);				
@@ -21,6 +25,10 @@
 				{
 					CNOT(register[0],register[1]);
 				}
+
+				DumpRegister("q0after.txt",register[0..0]);
+				DumpRegister("q1after.txt",register[1..1]);
+				
 				set firstResult = M(register[0]);
 				set secondResult = M(register[1]);
 				Reset(register[0]);
