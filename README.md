@@ -1,5 +1,19 @@
-# QuantumDemo
+# Introduction
 A demonstration to explain quantum computing with Q# . This solution is intended to be used for training purposes.  If you want to compile this solution make, sure you install the [Quantum Development Kit](https://docs.microsoft.com/en-us/quantum/quantum-installconfig) first and try to compile [this solution](https://github.com/Microsoft/QuantumKatas/blob/master/README.md) before using this one. There are several projects to demo something which can be a language feature, a quantum operation or even both. 
+
+# Run with docker
+
+The recommended way to work with this solution is compiling and running it in Visual Studio 2017 running on a Windows 10, which is how this solution was initially developed anyway. You can debug the quantum code and see what's happening. If you just want to see it running and do not want to install a quantum development kit on you local machine, you can use docker and cloning the solution. Each project has its own dockerfile. Here is an example how you can do that.
+
+```bash
+$ git clone https://github.com/ConnectingApps/QuantumDemo.git
+cd QuantumDemo
+cd PauliOperator
+docker build -t randomgenerator
+docker run randomgenerator
+```
+
+# Projects
 
 ## PauliOperator  ##
 
