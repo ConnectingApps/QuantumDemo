@@ -10,8 +10,7 @@ RUN apt update -y
 RUN apt-get -y install dotnet-sdk-2.1
 RUN dotnet new -i "Microsoft.Quantum.ProjectTemplates::0.2.1809.701-preview"
 RUN apt install libgomp1 -y
-WORKDIR /app
-COPY *.*s* /
+COPY . /app
 WORKDIR /app
 RUN dotnet build
 ENTRYPOINT ["dotnet"]
