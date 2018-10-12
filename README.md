@@ -50,7 +50,7 @@ The [CNOT](https://docs.microsoft.com/nl-nl/qsharp/api/prelude/microsoft.quantum
 - When using both, we cannot read the wave function because of [entanglement](https://en.wikipedia.org/wiki/Quantum_entanglement). This creates a special bond between two qbits so their values are not independant.
 
 # How can I contribute? #
-If you are familiar with quantum computing, have a look at the [quantum operators](https://docs.microsoft.com/en-us/qsharp/api/prelude/microsoft.quantum.primitive?view=qsharp-preview) available in Q#. Show something we have not shown yet. For example, create a that shows how the Z operator works. Keep in mind that this project has been created to demonstrate how features and operators in Q# work, not to make a brilliant math model. It is a training project. Contributions can be done via [pull requests](https://help.github.com/articles/creating-a-pull-request/).
+If you are familiar with quantum computing, have a look at the [quantum operators](https://docs.microsoft.com/en-us/qsharp/api/prelude/microsoft.quantum.primitive?view=qsharp-preview) available in Q#. Show something we have not shown yet. For example, create a that shows how the Z operator works. Keep in mind that this solution has been created to demonstrate how features and operators in Q# work, not to make a brilliant math model. It is a training solution. Contributions can be done via [pull requests](https://help.github.com/articles/creating-a-pull-request/).
 
 # How can I learn? #
 Just have a look at one of the projects and try to understand the input and output when running. Once it is clear, you understand the operators used in the project. If it is not clear, create an [issue](https://github.com/ConnectingApps/QuantumDemo/issues).
