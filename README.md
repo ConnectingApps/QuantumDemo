@@ -8,9 +8,9 @@ A demonstration to explain quantum computing with Q# . This solution is intended
   - [Projects](#projects)
     - [PauliOperator](#paulioperator)
     - [RandomGenerator](#randomgenerator-using-superposition)
-    - [TryCNOT and read the wave function](#TryCNOT-and-read-the-wave-function)
+    - [TryCNOT](#TryCNOT)
   - [How can I contribute?](#how-can-i-contribute?)
-  - [How can I learn? ](#how-can-i-learn?)
+  - [How can I learn?](#how-can-i-learn?)
 
 # Run with docker
 
