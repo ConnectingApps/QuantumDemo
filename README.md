@@ -9,6 +9,8 @@ A demonstration to explain quantum computing with Q# . This solution is intended
     - [PauliOperator](#paulioperator)
     - [RandomGenerator](#randomGenerator,-using-superposition)
     - [TryCNOT (and read the wave function)](#TryCNOT-and-read-the-wave-function))
+  - [How can I contribute?](#how-can-i-contribute?)
+  - [How can I learn? ](#how-can-i-learn?)
 
 # Run with docker
 
@@ -46,6 +48,12 @@ The [CNOT](https://docs.microsoft.com/nl-nl/qsharp/api/prelude/microsoft.quantum
 - When not applying CNOT, but only Hadamard, we see random behaviour of the measurement because of different wave function and thus different probabilities
 - When only using CNOT the target qbit can change because of having a different value then the source qbit. 
 - When using both, we cannot read the wave function because of [entanglement](https://en.wikipedia.org/wiki/Quantum_entanglement). This creates a special bond between two qbits so their values are not independant.
+
+# How can I contribute? #
+If you are familiar with quantum computing, have a look at the [quantum operators](https://docs.microsoft.com/en-us/qsharp/api/prelude/microsoft.quantum.primitive?view=qsharp-preview) available in Q#. Show something we have not shown yet. For example, create a that shows how the Z operator works. Keep in mind that this project has been created to demonstrate how features and operators in Q# work, not to make a brilliant math model. It is a training project. Contributions can be done via [pull requests](https://help.github.com/articles/creating-a-pull-request/).
+
+# How can I learn? #
+Just have a look at one of the projects and try to understand the input and output when running. Once it is clear, you understand the operators used in the project. If it is not clear, create an [issue](https://github.com/ConnectingApps/QuantumDemo/issues).
 
 
 
