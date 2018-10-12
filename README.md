@@ -7,8 +7,8 @@ A demonstration to explain quantum computing with Q# . This solution is intended
   - [Run with docker](#run-with-docker)
   - [Projects](#projects)
     - [PauliOperator](#paulioperator)
-    - [RandomGenerator](#randomGenerator,-using-superposition)
-    - [TryCNOT (and read the wave function)](#TryCNOT-and-read-the-wave-function))
+    - [RandomGenerator](#randomGenerator-using-superposition)
+    - [TryCNOT and read the wave function](#TryCNOT-and-read-the-wave-function))
   - [How can I contribute?](#how-can-i-contribute?)
   - [How can I learn? ](#how-can-i-learn?)
 
