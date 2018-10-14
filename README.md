@@ -9,6 +9,7 @@ A demonstration to explain quantum computing with Q# . This solution is intended
     - [PauliOperator](#paulioperator)
     - [RandomGenerator using superposition](#randomgenerator-using-superposition)
     - [TryCNOT](#trycnot)
+    - [QbitWave and the measurement problem](#qbitwave-and-the-measurement-problem)
   - [How can I contribute?](#how-can-i-contribute)
   - [How can I learn?](#how-can-i-learn)
 
@@ -48,6 +49,15 @@ The [CNOT](https://docs.microsoft.com/nl-nl/qsharp/api/prelude/microsoft.quantum
 - When not applying CNOT, but only Hadamard, we see random behaviour of the measurement because of different wave function and thus different probabilities
 - When only using CNOT the target qbit can change because of having a different value then the source qbit. 
 - When using both, we cannot read the wave function because of [entanglement](https://en.wikipedia.org/wiki/Quantum_entanglement). This creates a special bond between two qbits so their values are not independant.
+
+## QbitWave and the measurement problem ##
+The QbitWave project shows the wave function of qbits. What becomes clear is:
+- Measurement does not change the wave function of a default qbit
+- Measurement does not change the wave function of a flipped qbit
+- Flipping does change the wave function of the qbit
+- Measurement also does change the wave function of a qbit in a superposition
+
+This is last point remarkable. The idea of measurement is to get a value. For example, if you measure your body length, you do not change your body. Seems common sense. However, common sense is not reality in quantum computing. This is the [measurement problem](https://en.wikipedia.org/wiki/Measurement_problem) coming from quantum mechanics.
 
 # How can I contribute? #
 If you are familiar with quantum computing, have a look at the [quantum operators](https://docs.microsoft.com/en-us/qsharp/api/prelude/microsoft.quantum.primitive?view=qsharp-preview) available in Q#. Show something we have not shown yet. For example, create a that shows how the Z operator works. Keep in mind that this solution has been created to demonstrate how features and operators in Q# work, not to make a brilliant math model. It is a training solution. Contributions can be done via [pull requests](https://help.github.com/articles/creating-a-pull-request/).
