@@ -1,5 +1,5 @@
 # Introduction
-A demonstration to explain quantum computing with Q# . This solution is intended to be used for training purposes.  If you want to compile this solution make, sure you install the [Quantum Development Kit](https://docs.microsoft.com/en-us/quantum/quantum-installconfig) first and try to compile [this solution](https://github.com/Microsoft/QuantumKatas/blob/master/README.md) before using this one. There are several projects to demo something which can be a language feature, a quantum operation or even both.
+A demonstration to explain quantum computing with Q# . This solution is intended to be used for training purposes.  If you want to compile this solution make, sure you install the [Quantum Development Kit](https://docs.microsoft.com/en-us/quantum/quantum-installconfig) first and try to compile [this solution](https://github.com/Microsoft/Quantum) before using this one. There are several projects to demo something which can be a language feature, a quantum operation or even both.
 
 # Table of contents
 
@@ -10,6 +10,7 @@ A demonstration to explain quantum computing with Q# . This solution is intended
     - [RandomGenerator using superposition](#randomgenerator-using-superposition)
     - [TryCNOT](#trycnot)
     - [QbitWave and the measurement problem](#qbitwave-and-the-measurement-problem)
+    - [AdvancedPauliDemo](#advancedpaulidemo)
   - [How can I contribute?](#how-can-i-contribute)
   - [How can I learn?](#how-can-i-learn)
 
@@ -58,6 +59,13 @@ The QbitWave project shows the wave function of qbits. What becomes clear is:
 - Measurement also does change the wave function of a qbit in a superposition
 
 This is last point remarkable. The idea of measurement is to get a value. For example, if you measure your body length, you do not change your body. Seems common sense. However, common sense is not reality in quantum computing. This is the [measurement problem](https://en.wikipedia.org/wiki/Measurement_problem) coming from quantum mechanics.
+
+## AdvancedPauliDemo ##
+The advanced Pauli demo is a demonstration of all Pauli operators (X,Y and Z). A Pauli operation can be considered as a rotation according to the [documentation](https://docs.microsoft.com/nl-nl/quantum/libraries/prelude?view=qsharp-preview#pauli-operators). What this means for the wave function [you can log as developer](https://docs.microsoft.com/nl-nl/quantum/quantum-techniques-testinganddebugging?view=qsharp-preview&tabs=tabid-vs2017#dumpmachine), becomes clear in this project. It shows that:
+
+- Double Pauli operations have no effect (because of the 360 degree rotation)
+- Single Pauli operations sometimes have no effect because of rotation around an axis when the place of the qbit is on that axis....
+- Pauli operations do not change the absolute values in the wave function. A plus can become a minus or vice versa. The location of the value can change. All because of the 180 degree rotation. 
 
 # How can I contribute? #
 If you are familiar with quantum computing, have a look at the [quantum operators](https://docs.microsoft.com/en-us/qsharp/api/prelude/microsoft.quantum.primitive?view=qsharp-preview) available in Q#. Show something we have not shown yet. For example, create a that shows how the Z operator works. Keep in mind that this solution has been created to demonstrate how features and operators in Q# work, not to make a brilliant math model. It is a training solution. Contributions can be done via [pull requests](https://help.github.com/articles/creating-a-pull-request/).
