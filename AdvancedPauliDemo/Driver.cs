@@ -15,7 +15,7 @@ namespace Quantum.AdvancedPauliDemo
                 var res = ShowPauli.Run(sim).Result;
                 var currentDirectoryName = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
                 var files = Directory.EnumerateFiles(currentDirectoryName, "*.txt");
-                var toShow = (from file in files
+                var toShow = (from file in files.OrderBy(a => a)
                     select new
                     {
                         Operations = file.Split('/','\\').Last().Split(".").First(),
